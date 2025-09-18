@@ -2,7 +2,10 @@
   "name": "map-auth-service-qa",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+  "test": "npx playwright test",
+  "posttest": "node utils/generate-api-html-report.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,3 +18,5 @@
     "axios": "^1.11.0"
   }
 }
+ 
+ 

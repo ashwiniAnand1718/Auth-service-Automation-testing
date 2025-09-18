@@ -1,0 +1,299 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\krp\\MAP-Automation\\Auth-service-Automation-testing\\map-auth-service-qa\\playwright.config.ts",
+    "rootDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/tests/sso-dashboard/api-automation",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results/api-test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/tests/sso-dashboard/api-automation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/tests/sso-dashboard/api-automation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/krp/MAP-Automation/Auth-service-Automation-testing/map-auth-service-qa/tests/sso-dashboard/api-automation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "users\\api-getUsers.spec.ts",
+      "file": "users/api-getUsers.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test User is Created on SSO Dashboard @smoke , @reg",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "reg"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1538,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "TAP version 13\n"
+                    },
+                    {
+                      "text": "# Subtest: Get User APIs\n"
+                    },
+                    {
+                      "text": "ok 1 - Get User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.6168\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "# Subtest: post User APIs\n"
+                    },
+                    {
+                      "text": "ok 2 - post User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.089\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "{\n  profile: {\n    login: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    firstName: \u001b[32m'shankar'\u001b[39m,\n    lastName: \u001b[32m'parvati'\u001b[39m,\n    email: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    displayName: \u001b[32m'shankar parvati'\u001b[39m,\n    primaryPhone: \u001b[32m'+911234567890'\u001b[39m,\n    state: \u001b[32m'ACTIVE'\u001b[39m,\n    organizationName: \u001b[32m'test'\u001b[39m,\n    SSOV2OUName: \u001b[32m'Platform Engineering'\u001b[39m,\n    createdDate: \u001b[32m'2025-09-10T11:43:11'\u001b[39m,\n    lastUpdatedDate: \u001b[32m'2025-09-10T12:20:17.542+00:00'\u001b[39m,\n    activatedDate: \u001b[32m'2025-09-10T11:43:18'\u001b[39m,\n    lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n    passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n    title: \u001b[32m'Leaders'\u001b[39m,\n    country: \u001b[32m'United States'\u001b[39m,\n    companyType: \u001b[32m'Corporate - Energy'\u001b[39m,\n    registrationSource: \u001b[32m'SSO Dashboard'\u001b[39m,\n    migrated: \u001b[32m'true'\u001b[39m\n  },\n  credentialsProvider: { type: \u001b[32m'OKTA'\u001b[39m, name: \u001b[32m'OKTA'\u001b[39m },\n  id: \u001b[32m'00ut9mb5jn13cm4LK4x7'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n  passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n  isTermsOfUseExempt: \u001b[33mfalse\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-18T16:25:07.917Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24fe8cef578d46ff23e9-62b020dd910a22b98b3e",
+          "file": "users/api-getUsers.spec.ts",
+          "line": 7,
+          "column": 6
+        },
+        {
+          "title": "Test User is Created on SSO Dashboard @smoke , @reg",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "reg"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1463,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "TAP version 13\n"
+                    },
+                    {
+                      "text": "# Subtest: Get User APIs\n"
+                    },
+                    {
+                      "text": "ok 1 - Get User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.7136\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "# Subtest: post User APIs\n"
+                    },
+                    {
+                      "text": "ok 2 - post User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.0787\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "{\n  profile: {\n    login: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    firstName: \u001b[32m'shankar'\u001b[39m,\n    lastName: \u001b[32m'parvati'\u001b[39m,\n    email: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    displayName: \u001b[32m'shankar parvati'\u001b[39m,\n    primaryPhone: \u001b[32m'+911234567890'\u001b[39m,\n    state: \u001b[32m'ACTIVE'\u001b[39m,\n    organizationName: \u001b[32m'test'\u001b[39m,\n    SSOV2OUName: \u001b[32m'Platform Engineering'\u001b[39m,\n    createdDate: \u001b[32m'2025-09-10T11:43:11'\u001b[39m,\n    lastUpdatedDate: \u001b[32m'2025-09-10T12:20:17.542+00:00'\u001b[39m,\n    activatedDate: \u001b[32m'2025-09-10T11:43:18'\u001b[39m,\n    lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n    passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n    title: \u001b[32m'Leaders'\u001b[39m,\n    country: \u001b[32m'United States'\u001b[39m,\n    companyType: \u001b[32m'Corporate - Energy'\u001b[39m,\n    registrationSource: \u001b[32m'SSO Dashboard'\u001b[39m,\n    migrated: \u001b[32m'true'\u001b[39m\n  },\n  credentialsProvider: { type: \u001b[32m'OKTA'\u001b[39m, name: \u001b[32m'OKTA'\u001b[39m },\n  id: \u001b[32m'00ut9mb5jn13cm4LK4x7'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n  passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n  isTermsOfUseExempt: \u001b[33mfalse\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-18T16:25:08.468Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24fe8cef578d46ff23e9-9c4e2e0d88027f0dfcf7",
+          "file": "users/api-getUsers.spec.ts",
+          "line": 7,
+          "column": 6
+        },
+        {
+          "title": "Test User is Created on SSO Dashboard @smoke , @reg",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "reg"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1510,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "TAP version 13\n"
+                    },
+                    {
+                      "text": "# Subtest: Get User APIs\n"
+                    },
+                    {
+                      "text": "ok 1 - Get User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.6399\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "# Subtest: post User APIs\n"
+                    },
+                    {
+                      "text": "ok 2 - post User APIs\n"
+                    },
+                    {
+                      "text": "  ---\n  duration_ms: 0.1108\n  type: 'suite'\n  ...\n"
+                    },
+                    {
+                      "text": "{\n  profile: {\n    login: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    firstName: \u001b[32m'shankar'\u001b[39m,\n    lastName: \u001b[32m'parvati'\u001b[39m,\n    email: \u001b[32m'shivshakti@yopmail.com'\u001b[39m,\n    displayName: \u001b[32m'shankar parvati'\u001b[39m,\n    primaryPhone: \u001b[32m'+911234567890'\u001b[39m,\n    state: \u001b[32m'ACTIVE'\u001b[39m,\n    organizationName: \u001b[32m'test'\u001b[39m,\n    SSOV2OUName: \u001b[32m'Platform Engineering'\u001b[39m,\n    createdDate: \u001b[32m'2025-09-10T11:43:11'\u001b[39m,\n    lastUpdatedDate: \u001b[32m'2025-09-10T12:20:17.542+00:00'\u001b[39m,\n    activatedDate: \u001b[32m'2025-09-10T11:43:18'\u001b[39m,\n    lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n    passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n    title: \u001b[32m'Leaders'\u001b[39m,\n    country: \u001b[32m'United States'\u001b[39m,\n    companyType: \u001b[32m'Corporate - Energy'\u001b[39m,\n    registrationSource: \u001b[32m'SSO Dashboard'\u001b[39m,\n    migrated: \u001b[32m'true'\u001b[39m\n  },\n  credentialsProvider: { type: \u001b[32m'OKTA'\u001b[39m, name: \u001b[32m'OKTA'\u001b[39m },\n  id: \u001b[32m'00ut9mb5jn13cm4LK4x7'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  lastLoginDate: \u001b[32m'2025-09-10T12:25:26.995+00:00'\u001b[39m,\n  passwordChangedDate: \u001b[32m'2025-09-10T11:49:37+00:00'\u001b[39m,\n  isTermsOfUseExempt: \u001b[33mfalse\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-18T16:25:08.203Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24fe8cef578d46ff23e9-d873628df81856de7e24",
+          "file": "users/api-getUsers.spec.ts",
+          "line": 7,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-18T16:25:05.745Z",
+    "duration": 4253.1849999999995,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
